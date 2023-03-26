@@ -22,18 +22,18 @@ public class Guerreiro {
     public String getnomeGuerreiro() {
         return nomeGuerreiro;
     }
-    public Guerreiro(String nome){
+
+    public Guerreiro(String nome) {
         this.nomeGuerreiro = nome;
     }
 
-    public boolean marretada(int ptoForca, int vidaChef ){
+    public boolean marretada(int ptoForca, int vidaChef) {
 
-       int danoMarretada = ptoForca*this.danoBasico;
-       boolean killboss = danoMarretada > vidaChef;
-       System.out.println("O dano efetuado pelo guerreiro foi "+ danoMarretada + "!!!");
-       return killboss;
+        int danoMarretada = ptoForca * this.danoBasico;
+        boolean killboss = danoMarretada > vidaChef;
+        System.out.println("O dano efetuado pelo guerreiro foi " + danoMarretada + "!!!");
+        return killboss;
     }
-
 
 
 }

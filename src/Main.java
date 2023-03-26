@@ -12,18 +12,20 @@ public class Main {
         Guerreiro furia = new Guerreiro("Miguel");
         furia.setDanoBasico(30);
 
+        Assassino sombrar = new Assassino("Sebastião");
 
-        if(furia.marretada(10,vidaChef)){
+
+        if (furia.marretada(10, vidaChef)) {
             System.out.println("O boss foi de arrasta pra cima ");
 
-        }else{
+        } else {
             System.out.println("O boss sobreviveu !");
         }
 
-        if(arcano.fireball(10,vidaChef)){
+        if (arcano.fireball(10, vidaChef)) {
             System.out.println("O boss foi de comes e bebes");
 
-        }else {
+        } else {
             System.out.println("O boss continua de pé ");
         }
 
