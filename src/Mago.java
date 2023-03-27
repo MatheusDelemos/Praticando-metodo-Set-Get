@@ -4,7 +4,7 @@ public class Mago {
     private int danobasico;    //O mago da um dano na forma de variável inteira
     private String nomeMago;  // E o nome do mago é uma string/texto.
 
-   //Criando um metodo construtor para setar o nome ao criar um novo mago
+    //Criando um metodo construtor para setar o nome ao criar um novo mago
     public Mago(String nome) {
         this.nomeMago = nome;
     }

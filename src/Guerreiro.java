@@ -23,6 +23,7 @@ public class Guerreiro {
         return nomeGuerreiro;
     }
 
+
     public Guerreiro(String nome) {
         this.nomeGuerreiro = nome;
     }
