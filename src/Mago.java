@@ -15,7 +15,7 @@ public class Mago {
         //acima danototal esta recebendo danobasic multiplicando ponto inteligencia
         boolean hitkill = vidaChef < (danobasico * ptoInteligencia);
         //boolean aqui serve csetar um true no hitkill que é a vida do chef e o dano vezes pt inteligencia
-        System.out.println("Fireball do Mago infringiu " + danototal + " de dano");
+        System.out.println("Fireball do mago " +this.nomeMago+ " infringiu " + danototal + " de dano!!!");
         return hitkill;
         //retornando o hitkill
     }

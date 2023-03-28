@@ -32,7 +32,7 @@ public class Guerreiro {
 
         int danoMarretada = ptoForca * this.danoBasico;
         boolean killboss = danoMarretada > vidaChef;
-        System.out.println("O dano efetuado pelo guerreiro foi " + danoMarretada + "!!!");
+        System.out.println("O dano efetuado pelo guerreiro "+this.nomeGuerreiro +" foi " + danoMarretada + "!!!");
         return killboss;
     }
 
