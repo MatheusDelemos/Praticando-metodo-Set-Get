@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Main {
     //Transformar nome dos magos de variavel para uma propriedado dos magos semelhante ao dano basico
     public static void main(String[] args) {
-        int vidaChef = 260;
+        int vidaChef = 350;
         //Definindo um obejo mago arcano e setando um nome para ele
         // Mago arcano = new Mago("jorge");
         //definindo um dano para o mago arcano
@@ -13,8 +13,8 @@ public class Main {
 
         Guerreiro furia = createGuerreiro();
 
-        Assassino sombra = new Assassino("Sebastião");
-        sombra.setDanobasico(25);
+        Assassino sombra = createAssassino();
+
 
 
         if (furia.marretada(10, vidaChef)) {
@@ -31,7 +31,7 @@ public class Main {
             System.out.println("O boss continua de pé ");
         }
         if (sombra.esfaquear(15, vidaChef)) {
-            System.out.println("O boss foi de comes e bebes");
+            System.out.println("O boss foi de Americanas");
 
         } else {
             System.out.println("O boss continua de pé ");
@@ -74,7 +74,7 @@ public class Main {
 
     }
     // criando o metodo para criação do assassino e usando o scanner para pegar dados do teclado
-private static Assassino CreateAssassino(){
+private static Assassino createAssassino(){
         Scanner teclado = new Scanner(System.in);
         //criando uma função string para coletar o nome do teclado
         System.out.println("Digite o nome do seu Assassino: ");
