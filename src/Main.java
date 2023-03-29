@@ -73,5 +73,21 @@ public class Main {
         return furia;
 
     }
+    // criando o metodo para criação do assassino e usando o scanner para pegar dados do teclado
+private static Assassino CreateAssassino(){
+        Scanner teclado = new Scanner(System.in);
+        //criando uma função string para coletar o nome do teclado
+        System.out.println("Digite o nome do seu Assassino: ");
+        String nome = teclado.nextLine();
+        //criando uma função para coletar o dano basico do teclado
+        System.out.println("Digite o dano basico para seu Assassino");
+        int dano = teclado.nextInt();
+        // Setando o nome e o dano e a subclasse do assassino
+        Assassino sombra = new Assassino(nome);
+        sombra.setDanobasico(dano);
+        //retornando o assassino sombra
+        return sombra;
+
+}
 
 }
