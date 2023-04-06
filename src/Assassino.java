@@ -1,4 +1,5 @@
 public class Assassino {
+    public int vidaAssassino;
     public String nomeAssassino;
     public int danobasico;
 
@@ -23,12 +24,21 @@ public class Assassino {
         this.nomeAssassino = nome;
 
     }
+ public void setVidaAssassino(int vidaAssassino){
+        this.vidaAssassino = vidaAssassino;
+ }
 
-    public boolean esfaquear(int ptoDeztresa, int vidachef) {
+ public  int getVidaAssassino(){
+        return vidaAssassino;
+ }
+
+
+
+    public int esfaquear(int ptoDeztresa) {
         int danoEsfaquear = ptoDeztresa * this.danobasico;
-        boolean killboss = vidachef < danoEsfaquear;
+
         System.out.println("O dano causado pelo Assassino foi " + danoEsfaquear + " !!");
-        return killboss;
+        return danoEsfaquear;
     }
 
 }
